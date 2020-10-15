@@ -36,11 +36,11 @@ if(n==2):
 if(n==3):
   def deci_oct():
     k=int(input("Enter decimal no.\n"))
-    temp,oct,rem,pv=k,0,1,1
+    temp,oct,rem,pvs=k,0,1,1
     while(temp):
       rem=temp%8
       oct+=rem*pv
-      pv=pv*10
+      pvs=pvs*10
       temp//=8
     print(oct)
   deci_oct()
